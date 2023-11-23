@@ -25,7 +25,6 @@
         android:layout_marginTop="119dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Digite seu nome:"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -52,8 +51,9 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="197dp"
+        android:id="@+id/linearLayout"
+        android:layout_width="419dp"
+        android:layout_height="82dp"
         android:layout_marginTop="50dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
@@ -88,4 +88,14 @@
             android:layout_weight="1"
             android:text="Excluir" />
     </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="409dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 </androidx.constraintlayout.widget.ConstraintLayout>
